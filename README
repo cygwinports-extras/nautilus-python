@@ -1,0 +1,80 @@
+pynautilus
+------------------------------------------
+Python bindings for the Nautilus file manager.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  glib2-2.8.6-1
+  gtk2-x11-2.8.17-1
+  nautilus-2.12.2-1
+  pygnomevfs2-2.12.2-1
+  pygobject2-2.10.1-1
+  pygtk2-2.8.6-1
+  python-2.4.1-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.91-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.20-2
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://www.pygtk.org/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/gnome/sources/nautilus-python/
+
+-------------------------------------------
+
+Build instructions:
+  unpack pynautilus-0.4.3-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./pynautilus-0.4.3-1.sh all
+
+This will create:
+  /usr/src/pynautilus-0.4.3-1-src.tar.bz2
+  /usr/src/pynautilus-0.4.3-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/nautilus-python/nautilus.dll
+  /usr/lib/nautilus-python/nautilus.la
+  /usr/lib/nautilus/extensions-1.0/cygnautilus-python.dll
+  /usr/lib/nautilus/extensions-1.0/libnautilus-python.la
+  /usr/lib/pkgconfig/nautilus-python.pc
+  /usr/share/doc/Cygwin/pynautilus-0.4.3.README
+  /usr/share/doc/nautilus-python/README
+  /usr/share/doc/nautilus-python/documentation.py
+  /usr/share/doc/nautilus-python/examples/background-image.py
+  /usr/share/doc/nautilus-python/examples/block-size-column.py
+  /usr/share/doc/nautilus-python/examples/md5sum-property-page.py
+  /usr/share/doc/nautilus-python/examples/open-terminal.py
+  /usr/share/doc/pynautilus-0.4.3/AUTHORS
+  /usr/share/doc/pynautilus-0.4.3/COPYING
+  /usr/share/doc/pynautilus-0.4.3/ChangeLog
+  /usr/share/doc/pynautilus-0.4.3/INSTALL
+  /usr/share/doc/pynautilus-0.4.3/NEWS
+  /usr/share/doc/pynautilus-0.4.3/README
+
+------------------
+
+Port Notes:
+
+----- version 0.4.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
