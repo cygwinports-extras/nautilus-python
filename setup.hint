@@ -1,4 +1,4 @@
 category: Gnome Python
-requires: cygwin glib2 gtk2-x11 nautilus pygnomevfs2 pygtk2 pygobject2 python
+requires: cygwin glib2 gtk2-x11 nautilus python python-gnomevfs2 python-gtk2 python-gobject2
 sdesc: "Python bindings for the Nautilus file manager"
 ldesc: "Python bindings for the Nautilus file manager"
