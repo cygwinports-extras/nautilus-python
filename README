@@ -1,27 +1,26 @@
-python-nautilus
+nautilus-python
 ------------------------------------------
-Python bindings for the Nautilus file manager.
+Extension for Nautilus extensions in Python
 
 Runtime requirements:
-  cygwin-1.5.25-7
-  glib2-2.14.5-1
-  gtk2-x11-2.12.5-1
-  nautilus-2.20.0-1
-  python-2.5.1-3
-  python-gnomevfs2-2.20.1-1
-  python-gobject2-2.14.0-1
-  python-gtk2-2.12.0-1
+  cygwin-1.5.25-11
+  glib2-2.16.3-1
+  gtk2-x11-2.12.9-1
+  nautilus-2.22.2-1
+  python-2.5.2-1
+  python-gnomevfs2-2.22.1-1
+  python-gobject2-2.14.2-1
+  python-gtk2-2.12.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.25-7
   autoconf2.5-2.61-1
   automake1.7-1.7.9-3
   binutils-20060817-1
-  cygport-0.3.7-1
+  cygport-0.3.11-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.2-2
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -35,15 +34,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-nautilus-0.5.0-X-src.tar.bz2
+  unpack nautilus-python-0.5.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-nautilus-0.5.0-X.cygport all
+  cygport ./nautilus-python-0.5.0-X.cygport all
 
 This will create:
-  /usr/src/python-nautilus-0.5.0-X-src.tar.bz2
-  /usr/src/python-nautilus-0.5.0-X.tar.bz2
+  /usr/src/nautilus-python-0.5.0-X-src.tar.bz2
+  /usr/src/nautilus-python-0.5.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -51,26 +50,28 @@ Files included in the binary package:
 
   /usr/lib/nautilus-python/nautilus.dll
   /usr/lib/nautilus-python/nautilus.la
-  /usr/lib/nautilus/extensions-1.0/cygnautilus-python.dll
-  /usr/lib/nautilus/extensions-1.0/libnautilus-python.la
+  /usr/lib/nautilus/extensions-2.0/cygnautilus-python.dll
+  /usr/lib/nautilus/extensions-2.0/libnautilus-python.la
   /usr/lib/pkgconfig/nautilus-python.pc
-  /usr/share/doc/Cygwin/python-nautilus-0.5.0.README
-  /usr/share/doc/nautilus-python/README
-  /usr/share/doc/nautilus-python/documentation.py
-  /usr/share/doc/nautilus-python/examples/background-image.py
-  /usr/share/doc/nautilus-python/examples/block-size-column.py
-  /usr/share/doc/nautilus-python/examples/md5sum-property-page.py
-  /usr/share/doc/nautilus-python/examples/open-terminal.py
-  /usr/share/doc/python-nautilus-0.5.0/AUTHORS
-  /usr/share/doc/python-nautilus-0.5.0/COPYING
-  /usr/share/doc/python-nautilus-0.5.0/ChangeLog
-  /usr/share/doc/python-nautilus-0.5.0/INSTALL
-  /usr/share/doc/python-nautilus-0.5.0/NEWS
-  /usr/share/doc/python-nautilus-0.5.0/README
+  /usr/share/doc/nautilus-python-0.5.0/AUTHORS
+  /usr/share/doc/nautilus-python-0.5.0/COPYING
+  /usr/share/doc/nautilus-python-0.5.0/ChangeLog
+  /usr/share/doc/nautilus-python-0.5.0/INSTALL
+  /usr/share/doc/nautilus-python-0.5.0/NEWS
+  /usr/share/doc/nautilus-python-0.5.0/README
+  /usr/share/doc/nautilus-python-0.5.0/documentation.py
+  /usr/share/doc/nautilus-python-0.5.0/examples/background-image.py
+  /usr/share/doc/nautilus-python-0.5.0/examples/block-size-column.py
+  /usr/share/doc/nautilus-python-0.5.0/examples/md5sum-property-page.py
+  /usr/share/doc/nautilus-python-0.5.0/examples/open-terminal.py
+  /usr/share/doc/nautilus-python-0.5.0/examples/submenu.py
 
 ------------------
 
 Port Notes:
+
+----- version 0.5.0-2 -----
+Rebuilt for Nautilus 2.22.
 
 ----- version 0.5.0-1 -----
 Version bump.
