@@ -1,8 +1,0 @@
-inherit pygtk
-
-src_install() {
-	cd ${B}
-	cyginstall \
-		docsdir=/usr/share/doc/${P} \
-		examplesdir=/usr/share/doc/${P}/examples
-}
