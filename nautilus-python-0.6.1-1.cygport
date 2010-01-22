@@ -1,7 +1,5 @@
 SVN_BRANCH="tags/NAUTILUS_PYTHON_${PV//./_}"
-inherit pygtk svn
-
-PATCH_URI="0.5.1-gnome2.26.patch"
+inherit pygtk git
 
 DISTCLEANFILES="m4/aclocal.m4"
 
