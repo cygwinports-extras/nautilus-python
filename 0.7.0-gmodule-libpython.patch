@@ -1,0 +1,17 @@
+https://bugzilla.gnome.org/show_bug.cgi?id=599992
+
+--- origsrc/nautilus-python-0.7.0/src/nautilus-python.c	2010-05-20 16:11:11.000000000 -0500
++++ src/nautilus-python-0.7.0/src/nautilus-python.c	2010-05-23 00:27:34.716120900 -0500
+@@ -207,10 +207,12 @@ nautilus_python_init_python (void)
+ 	if (Py_IsInitialized())
+ 		return TRUE;
+ 
++#ifndef G_PLATFORM_WIN32
+   	debug("g_module_open " PY_LIB_LOC "/libpython" PYTHON_VERSION "." G_MODULE_SUFFIX ".1.0");
+ 	libpython = g_module_open(PY_LIB_LOC "/libpython" PYTHON_VERSION "." G_MODULE_SUFFIX ".1.0", 0);
+ 	if (!libpython)
+ 		g_warning("g_module_open libpython failed: %s", g_module_error());
++#endif
+ 
+ 	debug("Py_Initialize");
+ 	Py_Initialize();

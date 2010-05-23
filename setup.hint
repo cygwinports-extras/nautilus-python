@@ -1,4 +1,4 @@
 category: Gnome Python
-requires: libgcc1 libglib2.0_0 libgtk2.0_0 nautilus python python-gtk2 python-gobject2
+requires: libgcc1 libglib2.0_0 libgtk2.0_0 nautilus python python-gtk2.0 python-gobject2.0
 sdesc: "Nautilus Python extension bindings"
 ldesc: "Extension for Nautilus Python extensions"

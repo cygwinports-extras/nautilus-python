@@ -1,6 +1,0 @@
-SVN_BRANCH="tags/NAUTILUS_PYTHON_${PV//./_}"
-inherit pygtk git
-
-DISTCLEANFILES="m4/aclocal.m4"
-
-MAKEOPTS+=" PYTHON_LIB_LOC=/usr/bin"
