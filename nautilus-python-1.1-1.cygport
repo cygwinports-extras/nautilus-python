@@ -1,8 +1,0 @@
-inherit pygtk
-
-
-PATCH_URI="0.7.0-gmodule-libpython.patch"
-
-DISTCLEANFILES="m4/gtk-doc.m4"
-
-CYGCONF_ARGS="--enable-gtk-doc"

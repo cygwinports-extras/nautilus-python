@@ -1,4 +1,0 @@
-category: Gnome Python
-requires: libglib2.0_0 libgtk3_0 nautilus python python-gi girepository-Gtk3.0
-sdesc: "Nautilus Python extension bindings"
-ldesc: "Extension for Nautilus Python extensions"
